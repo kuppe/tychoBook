@@ -34,6 +34,20 @@
 					<!-- Do not run (SWTBot) tests in UI thread. Otherwise it potential 
 						deadlocks if the UI for example opens dialogs -->
 					<useUIThread>false</useUIThread>
+
+					<!-- use our product and application to launch the tests -->
+					<application>${uitest.application}</application>
+					<product>com.example.e4.rcp.todo.product</product>
+					<dependencies>
+						<!-- explicit dependency is needed because product/app is provided 
+							by this bundle -->
+						<dependency>
+							<type>p2-installable-unit</type>
+							<artifactId>com.example.e4.rcp.todo.product</artifactId>
+							<version>0.0.0</version>
+						</dependency>
+					</dependencies>
+
 				</configuration>
 			</plugin>
 		</plugins>

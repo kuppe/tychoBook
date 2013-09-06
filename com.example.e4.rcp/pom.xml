@@ -111,6 +111,8 @@
 				<target.groupId>com.example.e4.rcp</target.groupId>
 				<target.artifactId>com.example.e4.rcp.todo.target</target.artifactId>
 				<target.version>1.0.0-SNAPSHOT</target.version>
+				
+				<uitest.application>org.eclipse.e4.ui.workbench.swt.E4Application</uitest.application>
 			</properties>
 		</profile>
 		<profile>
@@ -119,6 +121,8 @@
 				<target.groupId>com.example.e4.rcp</target.groupId>
 				<target.artifactId>com.example.e4.rcp.todo.target.juno</target.artifactId>
 				<target.version>1.0.0-SNAPSHOT</target.version>
+				
+				<uitest.application>org.eclipse.ui.ide.workbench</uitest.application>
 			</properties>
 		</profile>
 	</profiles>
